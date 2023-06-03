@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun  2 22:55:52 2023
+# Process ID: 4636
+# Current directory: C:/Users/hjh09/Desktop/project/spi_test/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6372 C:\Users\hjh09\Desktop\project\spi_test\prj\top.xpr
+# Log file: C:/Users/hjh09/Desktop/project/spi_test/prj/vivado.log
+# Journal file: C:/Users/hjh09/Desktop/project/spi_test/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hjh09/Desktop/project/spi_test/prj/top.xpr
+update_compile_order -fileset sources_1
+set addr 8
+set address [format "0x%08X" $addr]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl
+ReadReg 0x68
+ReadReg 0x60
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+puts $id_data
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+ReadReg 0x6c
+expr {0xFF & [ReadReg 0x6c]}
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+ReadReg 0x78
+delete_hw_axi_txn rd_txn
+ReadReg 0x78
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+ReadReg 0x78
+ReadReg 0x6c
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+ReadReg 0x78
+ReadReg 0x6c
+ReadReg 0x6c
+ReadReg 0x6c
+expr {int(ReadReg 0x6c)}
+expr {int[ReadReg 0x6c]}
+expr {[ReadReg 0x6c]}
+expr {0xff & [ReadReg 0x6c]}
+int([ReadReg 0x6c])
+expr {int([ReadReg 0x6c])}
+string index [ReadReg 0x6c] -1
+string length [ReadReg 0x6c]
+string index [ReadReg 0x6c] end-1
+string index [ReadReg 0x6c] end
+string range [ReadReg 0x6c] end-1 end
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+RDID 4
+expr {0x102030 >> 16}
+expr {0x102030 & 0xff0000}
+expr {0x102030 >> 16}
+expr {0x102030 % expr(2**16)}
+expr {0x102030 % (2**16)}
+expr {0x102030 % (expr(2**16))}
+expr {0x102030 % {expr(2**16)}}
+expr {0x102030 % pow(2,16)}
+expr {0x102030 % expr(pow(2,16))}
+expr {0x102030 >> 16}
+expr {0x102030 >> 8}
+expr {fmod(expr (0x102030 >> 8),256)}
+expr {fmod(0x1020,256)}
+expr {0x1020%256)}
+expr {0x1020 % 256}
+expr {0x102030 % 256}
+expr {0x102030 % expr{2**16}}
+expr {0x102030 % expr(2**16)}
+expr {0x102030 % [expr(2**16)]}
+2**16
+expr {2**16}
+expr (0x102030 % expr{2**16})
+expr (0x102030 % expr(2**16))
+expr (0x102030 % (expr(2**16)))
+expr 0x102030 % (2**16)
+expr (0x102030 % (2**16)) >> 8
+expr (0x102030 % (2**8))
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID
+RDID 4
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 3
+ReadReg 0x78
+RDID 3
+RDID 4
+RDID 8
+READ 0x1000 10
+ReadReg 0x78
+READ 0x1000 10
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x1000 10
+SE 1
+READ 0x1000 10
+BE
+READ 0x1000 10
+READ 0x100 20
+WREN
+SE 1
+READ 0x100 20
+SE 0
+READ 0x100 20
+BE
+READ 0x100 20
+WREN
+BE
+READ 0x100 20
+PP 0x100
+READ 0x100 20
+READ 0x100 20
+WREN
+PP 0x100
+READ 0x100 20
+READ 0x114 20
+READ 0x100 128
+READ 0x100 256
+READ 0x180 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+SE 0
+READ 0x100 128
+PP 0x100
+READ 0x100 128
+READ 0x180 128
+PP 0x180
+READ 0x180 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+BE
+READ 0x100 128
+PP 0x100
+READ 0x100 128
+READ 0x100 128
+PP 0x100
+READ 0x100 128
+READ 0x180 128
+PP 0x100
+READ 0x180 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x180 128
+READ 0x100 128
+SE 0x0
+READ 0x100 128
+PP 0x100
+READ 0x100 128
+READ 0x180 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0x100 128
+open_bd_design {C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_SPI_MODE {2} CONFIG.C_FIFO_DEPTH {256}] [get_bd_cells axi_quad_spi_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_axi_quad_spi_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+RDID 4
+RDID 10
+RDID 10
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+RDID 10
+RDID 10
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+BE
+RDID 10
+READ 0X100 200
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+READ 0X100 200
+set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+READ 0X100 200
+RDID 10
+PP 0X100
+READ 0X100 200
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+QOFR 10
+WriteReg 0x40 0xa
+source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl
+QOFR 0X100 10
+ReadReg 0x78
+QOFR 0X100 20
+ReadReg 0x78
+ReadReg 0x20
+close_hw

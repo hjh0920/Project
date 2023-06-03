@@ -1,0 +1,2672 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 4636
+License: Customer
+
+Current time: 	Fri Jun 02 22:56:07 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 199 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Software/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Software/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pokemon
+User home directory: C:/Users/hjh09
+User working directory: C:/Users/hjh09/Desktop/project/spi_test/prj
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Software/Xilinx/Vivado
+HDI_APPROOT: C:/Software/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Software/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Software/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/hjh09/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/hjh09/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/hjh09/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Software/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/hjh09/Desktop/project/spi_test/prj/vivado.log
+Vivado journal file location: 	C:/Users/hjh09/Desktop/project/spi_test/prj/vivado.jou
+Engine tmp dir: 	C:/Users/hjh09/Desktop/project/spi_test/prj/.Xil/Vivado-4636-DESKTOP-VU123TF
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Software/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Software/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Software/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Software/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Software/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Software/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 708 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\hjh09\Desktop\project\spi_test\prj\top.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+106685kb) [00:00:08]
+// [Engine Memory]: 641 MB (+520755kb) [00:00:08]
+// [Engine Memory]: 678 MB (+5102kb) [00:00:09]
+// [GUI Memory]: 110 MB (+388kb) [00:00:09]
+// [GUI Memory]: 117 MB (+1562kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2477 ms.
+// Tcl Message: open_project C:/Users/hjh09/Desktop/project/spi_test/prj/top.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Software/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 742 MB (+31890kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 742 MB. GUI used memory: 56 MB. Current time: 6/2/23, 10:56:09 PM CST
+// Project name: top; location: C:/Users/hjh09/Desktop/project/spi_test/prj; part: xc7a35tfgg484-2
+dismissDialog("Open Project"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ae (cl)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_TCL_STORE, "Xilinx Tcl Store..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_TCL_STORE
+// [Engine Memory]: 801 MB (+22795kb) [00:00:14]
+// A (cl): Install Tcl Application Information: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, A): TRUE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// u (cl): Xilinx Tcl Store: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1486 ms.
+dismissDialog("Install Tcl Application Information"); // A (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/2/23, 10:56:28 PM CST
+// Elapsed time: 26 seconds
+selectList(PAResourceTtoZ.TclStoreDialog_TCL_STORE_NAVIGATOR, "xsim", 5); // k (O, u)
+selectLabel((HResource) null, "Vivado Simulator"); // b (Q)
+// Elapsed time: 13 seconds
+selectList(PAResourceTtoZ.TclStoreDialog_TCL_STORE_NAVIGATOR, "profiler", 18); // k (O, u)
+selectLabel((HResource) null, "Tcl Profiler"); // b (Q)
+selectButton(PAResourceTtoZ.TclStoreDialog_SUPPORT_ON_GITHUB, "Support on GitHub"); // h (i, u)
+// Elapsed time: 728 seconds
+selectButton(PAResourceTtoZ.TclStoreDialog_CLOSE, "Close"); // a (u)
+dismissDialog("Xilinx Tcl Store"); // u (cl)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+// Elapsed time: 25 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set address [format \"0x%08X\" $];"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set address [format \"0x%08X\" $address];"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set addr 8", true); // aC (Z, cl)
+// Tcl Command: 'set addr 8'
+// Tcl Command: 'set addr 8'
+// Tcl Message: set addr 8 
+// Tcl Message: 8 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set address [format \"0x%08X\" $addr]", true); // aC (Z, cl)
+// Tcl Command: 'set address [format "0x%08X" $addr]'
+// Tcl Command: 'set address [format "0x%08X" $addr]'
+// Tcl Message: set address [format "0x%08X" $addr] 
+// Tcl Message: 0x00000008 
+// [GUI Memory]: 128 MB (+5856kb) [00:13:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 67 MB. Current time: 6/2/23, 11:26:28 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 64 MB. Current time: 6/2/23, 11:56:28 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 12:26:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 12:58:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 1:28:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 1:58:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 2:28:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 2:58:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 3:28:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 3:58:17 AM CST
+// WARNING: HTimer (a Update Status Timer) is taking 33355745ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  33355760 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 1:24:29 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 33356893 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 33356792 ms. Increasing delay to 100070376 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 1:54:29 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 2:24:30 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 62 MB. Current time: 6/3/23, 2:54:30 PM CST
+// Elapsed time: 57203 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3784 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,861 MB. GUI used memory: 65 MB. Current time: 6/3/23, 3:03:30 PM CST
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 1,862 MB (+1069873kb) [16:07:33]
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+floatFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az (aK, cl)
+// PAResourceOtoP.PAViews_TCL_CONSOLE: Tcl Console: float view
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az (aK, aM)
+dockFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az (aK, aM)
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az (aK, aM)
+// PAResourceOtoP.PAViews_TCL_CONSOLE: Tcl Console: dock view
+selectButton(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, "Tcl Console_remove"); // B (f, cl)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+selectButton(RDIResource.HJFileChooserHelpers_JUMP_TO_RECENT_PROJECT_DIRECTORY, (String) null); // a (b, JDialog)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl 
+// Tcl Message: # proc ReadReg {address} { #     set address [format 0x%08x $address] #     create_hw_axi_txn rd_txn [get_hw_axis hw_axi_1] -address $address -type read #     run_hw_axi rd_txn #     set read_value [lindex [report_hw_axi_txn rd_txn] 1] #     delete_hw_axi_txn rd_txn #     return $read_value # } # proc WriteReg {address data} { #     set address [format 0x%08x $address] #     set data [format 0x%08x $data] #     create_hw_axi_txn wr_txn [get_hw_axis hw_axi_1] -type write -address $address -data $data #     run_hw_axi wr_txn #     set write_value [lindex [report_hw_axi_txn wr_txn] 1] #     delete_hw_axi_txn wr_txn #     return $write_value # } 
+// 'cK' command handler elapsed time: 9 seconds
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {r*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Elapsed time: 24 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x68", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x68'
+// Tcl Command: 'ReadReg 0x68'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x68 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 00000000 
+// Tcl Message: 00000000 
+// Elapsed time: 61 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x60", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x60'
+// Tcl Command: 'ReadReg 0x60'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x60 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 00000180 
+// Tcl Message: 00000180 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 218, 510); // dt (af, cl)
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {put*}'
+// Tcl Command: 'rdi::info_commands {puts*}'
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "puts $id_data", true); // aC (Z, cl)
+// Tcl Command: 'puts $id_data'
+// Tcl Command: 'puts $id_data'
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+// Tcl Message: puts $id_data 
+// Tcl Message: can't read "id_data": no such variable 
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RID*}'
+// Tcl Command: 'rdi::info_commands {RI*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RD*}'
+// Tcl Command: 'rdi::info_commands {RD*}'
+// Elapsed time: 21 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x000001e6 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x0000009f INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000086 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000001 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 
+// Tcl Message: wrong # args: should be "ReadReg address" 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 373, 441); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 323, 465); // dt (af, cl)
+// Elapsed time: 19 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RD*}'
+// Tcl Command: 'rdi::info_commands {RD*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x000001e6 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x0000009f INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000086 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000001 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 INFO: [Labtoolstcl 44-481] READ DATA is: 000000ff 
+// Tcl Message: expected integer but got "000000ff" 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 187, 466); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 291, 483); // dt (af, cl)
+// Elapsed time: 96 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 264, 487); // dt (af, cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3"); // aC (Z, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+// 'cK' command handler elapsed time: 3 seconds
+dismissDialog("Source Tcl Script"); // by (cl)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3"); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: expected integer but got "000000ff" 
+// [GUI Memory]: 136 MB (+1256kb) [16:13:47]
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 280, 470); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 280, 470, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 333, 461); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 238, 457); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 238, 457, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 293, 443); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 316, 439); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 290, 507); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 60, 488); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 127, 494); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 72, 485); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 72, 485, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 137, 483); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 137, 483, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 187, 483); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 187, 483, false, false, false, false, true); // dt (af, cl) - Double Click
+// Elapsed time: 907 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x6c", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x6c'
+// Tcl Command: 'ReadReg 0x6c'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x6c 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 00000020 
+// Tcl Message: 00000020 
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Elapsed time: 62 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0xFF & }"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0xFF & [ReadReg 0x6c]}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0xFF & [ReadReg 0x6c]}'
+// Tcl Command: 'expr {0xFF & [ReadReg 0x6c]}'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expr {0xFF & [ReadReg 0x6c]} 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 000000ba 
+// Tcl Message: can't use non-numeric string as operand of "&" 
+// Elapsed time: 171 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+// 'cK' command handler elapsed time: 3 seconds
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: RDID is 000000ff00000020000000ba 
+// Elapsed time: 79 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: RDID is 000000ff 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 00000020 
+// Tcl Message: RDID is 000000ff00000020 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 000000ba 
+// Tcl Message: RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+// Elapsed time: 48 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x0000000a INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00003fff INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x80000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x000001e6 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x0000009f INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000000 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000086 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000001 INFO: [Labtoolstcl 44-481] WRITE DATA is: 0x00000186 
+// Tcl Message: 0 1 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 000000ff 
+// Tcl Message: RDID is 000000ff 2 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 00000020 
+// Tcl Message: RDID is 000000ff00000020 3 
+// Tcl Message: INFO: [Labtoolstcl 44-481] READ DATA is: 000000ba 
+// Tcl Message: RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+// Elapsed time: 83 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: incomplete operator "=" in expression "[ReadReg 0x78] /= 0" 
+// Elapsed time: 14 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 69 MB. Current time: 6/3/23, 3:33:35 PM CST
+// TclEventType: HW_AXI_CHANGE
+// Elapsed time: 13 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (by)
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton (ag, cl)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'run_hw_axi' was cancelled 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 10 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 86, 235); // dt (af, cl)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: ERROR: [Labtools 27-1991] Can not create a second hw_axi_txn object with the same name [rd_txn].  Use the -force option to override this error check. 
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "delete_hw_axi_txn rd_txn", true); // aC (Z, cl)
+// Tcl Command: 'delete_hw_axi_txn rd_txn'
+// Tcl Command: 'delete_hw_axi_txn rd_txn'
+// Tcl Message: delete_hw_axi_txn rd_txn 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000003 
+// Elapsed time: 82 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 RDID is 000000ff 2 RDID is 000000ff00000020 3 RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+// Elapsed time: 17 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000000 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x6c", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x6c'
+// Tcl Command: 'ReadReg 0x6c'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x6c 
+// Tcl Message: 00000018 
+// Elapsed time: 62 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 39, 279); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 40, 295); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 62, 313); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 62, 313, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 80, 346); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 80, 346, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 77, 314); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 77, 314, false, false, false, false, true); // dt (af, cl) - Double Click
+// Elapsed time: 27 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 2 RDID is 000000ff 3 RDID is 000000ff00000020 4 RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 42, 337); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 41, 363); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 81, 386); // dt (af, cl)
+// Elapsed time: 188 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 393, 242); // dt (af, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 2 RDID is 000000ff 3 RDID is 000000ff00000020 4 RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+// Elapsed time: 40 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 2 3 RDID is 000000ff 4 RDID is 000000ff00000020 5 RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 47, 382); // dt (af, cl)
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 2 3 4 5 6 7 8 9 10 11 RDID is 000000ff 12 RDID is 000000ff00000020 13 RDID is 000000ff00000020000000ba RDID is 000000ff00000020000000ba 
+// Elapsed time: 133 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: 0 1 RDID is 00000020 2 RDID is 00000020000000ba 3 RDID is 00000020000000ba00000018 RDID is 00000020000000ba00000018 
+// Tcl Command: 'rdi::info_commands {set*}'
+// Elapsed time: 168 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000000 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x6c", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x6c'
+// Tcl Command: 'ReadReg 0x6c'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x6c 
+// Tcl Message: 00000018 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x6c", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x6c'
+// Tcl Command: 'ReadReg 0x6c'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x6c 
+// Tcl Message: 00000018 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x6c", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x6c'
+// Tcl Command: 'ReadReg 0x6c'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x6c 
+// Tcl Message: 00000018 
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Elapsed time: 63 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {int(R)}"); // aC (Z, cl)
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {int(ReadReg 0x6c)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {int(ReadReg 0x6c)}'
+// Tcl Command: 'expr {int(ReadReg 0x6c)}'
+// Tcl Message: expr {int(ReadReg 0x6c)} 
+// Tcl Message: invalid bareword "ReadReg" in expression "int(ReadReg 0x6c)"; should be "$ReadReg" or "{ReadReg}" or "ReadReg(...)" or ... 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {int(ReadReg 0x6c)}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {int[ReadReg 0x6c]}", true); // aC (Z, cl)
+// Tcl Command: 'expr {int[ReadReg 0x6c]}'
+// Tcl Command: 'expr {int[ReadReg 0x6c]}'
+// Tcl Message: expr {int[ReadReg 0x6c]} 
+// Tcl Message: invalid bareword "int" in expression "int[ReadReg 0x6c]"; should be "$int" or "{int}" or "int(...)" or ... 
+// Elapsed time: 24 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {[ReadReg 0x6c]}", true); // aC (Z, cl)
+// Tcl Command: 'expr {[ReadReg 0x6c]}'
+// Tcl Command: 'expr {[ReadReg 0x6c]}'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expr {[ReadReg 0x6c]} 
+// Tcl Message: 00000018 
+// Elapsed time: 17 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0xff & [ReadReg 0x6c]}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0xff & [ReadReg 0x6c]}'
+// Tcl Command: 'expr {0xff & [ReadReg 0x6c]}'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expr {0xff & [ReadReg 0x6c]} 
+// Tcl Message: can't use invalid octal number as operand of "&" 
+// Tcl Command: 'rdi::info_commands {int*}'
+// Tcl Command: 'rdi::info_commands {int*}'
+// Elapsed time: 60 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "int([ReadReg 0x6c])", true); // aC (Z, cl)
+// Tcl Command: 'int([ReadReg 0x6c])'
+// Tcl Command: 'int([ReadReg 0x6c])'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: int([ReadReg 0x6c]) 
+// Tcl Message: invalid command name "int(00000018)" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0xff & [ReadReg 0x6c]}"); // aC (Z, cl)
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {ex*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {int([ReadReg 0x6c])}", true); // aC (Z, cl)
+// Tcl Command: 'expr {int([ReadReg 0x6c])}'
+// Tcl Command: 'expr {int([ReadReg 0x6c])}'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expr {int([ReadReg 0x6c])} 
+// Tcl Message: expected number but got "00000018" (looks like invalid octal number) 
+// Tcl Command: 'rdi::info_commands {s*}'
+// Tcl Command: 'rdi::info_commands {srin*}'
+// Tcl Command: 'rdi::info_commands {sr*}'
+// Tcl Command: 'rdi::info_commands {s*}'
+// Tcl Command: 'rdi::info_commands {st*}'
+// Tcl Command: 'rdi::info_commands {string*}'
+// Tcl Command: 'rdi::match_options {string} {1}'
+// Elapsed time: 65 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "string index [ReadReg 0x6c] -1", true); // aC (Z, cl)
+// Tcl Command: 'string index [ReadReg 0x6c] -1'
+// Tcl Command: 'string index [ReadReg 0x6c] -1'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: string index [ReadReg 0x6c] -1 
+// Elapsed time: 34 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "string length [ReadReg 0x6c]", true); // aC (Z, cl)
+// Tcl Command: 'string length [ReadReg 0x6c]'
+// Tcl Command: 'string length [ReadReg 0x6c]'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: string length [ReadReg 0x6c] 
+// Tcl Message: 8 
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "string index [ReadReg 0x6c] end-1", true); // aC (Z, cl)
+// Tcl Command: 'string index [ReadReg 0x6c] end-1'
+// Tcl Command: 'string index [ReadReg 0x6c] end-1'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: string index [ReadReg 0x6c] end-1 
+// Tcl Message: 1 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "string index [ReadReg 0x6c] end", true); // aC (Z, cl)
+// Tcl Command: 'string index [ReadReg 0x6c] end'
+// Tcl Command: 'string index [ReadReg 0x6c] end'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: string index [ReadReg 0x6c] end 
+// Tcl Message: 8 
+// Elapsed time: 56 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "string range [ReadReg 0x6c] end-1 end", true); // aC (Z, cl)
+// Tcl Command: 'string range [ReadReg 0x6c] end-1 end'
+// Tcl Command: 'string range [ReadReg 0x6c] end-1 end'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: string range [ReadReg 0x6c] end-1 end 
+// Tcl Message: 18 
+// Elapsed time: 42 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 230, 466); // dt (af, cl)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dt (af, cl)
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: RDID is 20ba18 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 4", true); // aC (Z, cl)
+// Tcl Command: 'RDID 4'
+// Tcl Command: 'RDID 4'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 4 
+// Tcl Message: RDID is 20ba1810 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 95 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 68 MB. Current time: 6/3/23, 4:03:36 PM CST
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {ex*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Elapsed time: 2116 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 >> 16}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Message: expr {0x102030 >> 16} 
+// Tcl Message: 16 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 68 MB. Current time: 6/3/23, 4:33:36 PM CST
+// Elapsed time: 31 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 & 0xff0000}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 & 0xff0000}'
+// Tcl Command: 'expr {0x102030 & 0xff0000}'
+// Tcl Message: expr {0x102030 & 0xff0000} 
+// Tcl Message: 1048576 
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 >> 16}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Message: expr {0x102030 >> 16} 
+// Tcl Message: 16 
+// Elapsed time: 150 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % expr(2**16)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % expr(2**16)}'
+// Tcl Command: 'expr {0x102030 % expr(2**16)}'
+// Tcl Message: expr {0x102030 % expr(2**16)} 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+// Elapsed time: 47 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % (2**16)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % (2**16)}'
+// Tcl Command: 'expr {0x102030 % (2**16)}'
+// Tcl Message: expr {0x102030 % (2**16)} 
+// Tcl Message: 8240 
+// Tcl Command: 'rdi::info_commands {hex*}'
+// Elapsed time: 71 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % (expr(2**16))}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % (expr(2**16))}'
+// Tcl Command: 'expr {0x102030 % (expr(2**16))}'
+// Tcl Message: expr {0x102030 % (expr(2**16))} 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % {expr(2**16)}}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % {expr(2**16)}}'
+// Tcl Command: 'expr {0x102030 % {expr(2**16)}}'
+// Tcl Message: expr {0x102030 % {expr(2**16)}} 
+// Tcl Message: can't use non-numeric string as operand of "%" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % {expr(2**16)}}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % expr(2**16)}}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % (expr(2**16)}}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % (expr(2**16)}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % (expr(2**16))}"); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+// Elapsed time: 61 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % pow(2,16)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % pow(2,16)}'
+// Tcl Command: 'expr {0x102030 % pow(2,16)}'
+// Tcl Message: expr {0x102030 % pow(2,16)} 
+// Tcl Message: can't use floating-point value as operand of "%" 
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % expr(pow(2,16))}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % expr(pow(2,16))}'
+// Tcl Command: 'expr {0x102030 % expr(pow(2,16))}'
+// Tcl Message: expr {0x102030 % expr(pow(2,16))} 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+// Elapsed time: 49 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 >> 16}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Command: 'expr {0x102030 >> 16}'
+// Tcl Message: expr {0x102030 >> 16} 
+// Tcl Message: 16 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 >> 8}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 >> 8}'
+// Tcl Command: 'expr {0x102030 >> 8}'
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+// Tcl Message: expr {0x102030 >> 8} 
+// Tcl Message: 4128 
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {ep*}'
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {ex*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Elapsed time: 51 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {fmod(expr (0x102030 >> 8),256)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {fmod(expr (0x102030 >> 8),256)}'
+// Tcl Command: 'expr {fmod(expr (0x102030 >> 8),256)}'
+// Tcl Message: expr {fmod(expr (0x102030 >> 8),256)} 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+// Elapsed time: 34 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {fmod(0x1020,256)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {fmod(0x1020,256)}'
+// Tcl Command: 'expr {fmod(0x1020,256)}'
+// Tcl Message: expr {fmod(0x1020,256)} 
+// Tcl Message: 32.0 
+// Elapsed time: 26 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x1020%256)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x1020%256)}'
+// Tcl Command: 'expr {0x1020%256)}'
+// Tcl Message: expr {0x1020%256)} 
+// Tcl Message: unbalanced close paren in expression "0x1020%256)" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x1020 % 256}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x1020 % 256}'
+// Tcl Command: 'expr {0x1020 % 256}'
+// Tcl Message: expr {0x1020 % 256} 
+// Tcl Message: 32 
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % 256}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % 256}'
+// Tcl Command: 'expr {0x102030 % 256}'
+// Tcl Message: expr {0x102030 % 256} 
+// Tcl Message: 48 
+// Elapsed time: 35 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % expr{2**16}}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % expr{2**16}}'
+// Tcl Command: 'expr {0x102030 % expr{2**16}}'
+// Tcl Message: expr {0x102030 % expr{2**16}} 
+// Tcl Message: invalid bareword "expr" in expression "0x102030 % expr{2**16}"; should be "$expr" or "{expr}" or "expr(...)" or ... 
+// Elapsed time: 13 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % expr(2**16)}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % expr(2**16)}'
+// Tcl Command: 'expr {0x102030 % expr(2**16)}'
+// Tcl Message: expr {0x102030 % expr(2**16)} 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {0x102030 % [expr(2**16)]}", true); // aC (Z, cl)
+// Tcl Command: 'expr {0x102030 % [expr(2**16)]}'
+// Tcl Command: 'expr {0x102030 % [expr(2**16)]}'
+// Tcl Message: expr {0x102030 % [expr(2**16)]} 
+// Tcl Message: invalid command name "expr(2**16)" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "2**16", true); // aC (Z, cl)
+// Tcl Command: '2**16'
+// Tcl Command: '2**16'
+// Tcl Message: 2**16 
+// Tcl Message: [2**16] 
+// Tcl Command: 'rdi::info_commands {e*}'
+// Tcl Command: 'rdi::info_commands {exp*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Tcl Command: 'rdi::info_commands {expr*}'
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr {2**16}", true); // aC (Z, cl)
+// Tcl Command: 'expr {2**16}'
+// Tcl Command: 'expr {2**16}'
+// Tcl Message: expr {2**16} 
+// Tcl Message: 65536 
+// Elapsed time: 113 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % expr{2**16})", true); // aC (Z, cl)
+// Tcl Command: 'expr (0x102030 % expr{2**16})'
+// Tcl Command: 'expr (0x102030 % expr{2**16})'
+// Tcl Message: expr (0x102030 % expr{2**16}) 
+// Tcl Message: invalid bareword "expr" in expression "(0x102030 % expr{2**16})"; should be "$expr" or "{expr}" or "expr(...)" or ... 
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % expr(2**16))", true); // aC (Z, cl)
+// Tcl Command: 'expr (0x102030 % expr(2**16))'
+// Tcl Command: 'expr (0x102030 % expr(2**16))'
+// Tcl Message: expr (0x102030 % expr(2**16)) 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % (expr(2**16)))", true); // aC (Z, cl)
+// Tcl Command: 'expr (0x102030 % (expr(2**16)))'
+// Tcl Command: 'expr (0x102030 % (expr(2**16)))'
+// Tcl Message: expr (0x102030 % (expr(2**16))) 
+// Tcl Message: invalid command name "tcl::mathfunc::expr" 
+// Elapsed time: 353 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr 0x102030 % (2**16)", true); // aC (Z, cl)
+// Tcl Command: 'expr 0x102030 % (2**16)'
+// Tcl Command: 'expr 0x102030 % (2**16)'
+// Tcl Message: expr 0x102030 % (2**16) 
+// Tcl Message: 8240 
+// Elapsed time: 43 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % (2**16)) >> 8", true); // aC (Z, cl)
+// Tcl Command: 'expr (0x102030 % (2**16)) >> 8'
+// Tcl Command: 'expr (0x102030 % (2**16)) >> 8'
+// Tcl Message: expr (0x102030 % (2**16)) >> 8 
+// Tcl Message: 32 
+// Elapsed time: 46 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % (2**8))", true); // aC (Z, cl)
+// Tcl Command: 'expr (0x102030 % (2**8))'
+// Tcl Command: 'expr (0x102030 % (2**8))'
+// Tcl Message: expr (0x102030 % (2**8)) 
+// Tcl Message: 48 
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "expr (0x102030 % (2**16)) >> 8"); // aC (Z, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 67 MB. Current time: 6/3/23, 5:03:37 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 1472 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectButton(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, "Tcl Console_remove"); // B (f, cl)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl 
+// Tcl Message: 16 32 48 16 32 176 
+// Tcl Message: # PP 1056816 
+// Tcl Message: 16 32 48 16 32 176 
+dismissDialog("Source Tcl Script"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device"); // ae (cl)
+selectMenu(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 307, 238); // dt (af, cl)
+// Elapsed time: 26 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {R*}'
+// Elapsed time: 18 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "R", true); // aC (Z, cl)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID"); // aC (Z, cl)
+// Tcl Command: 'RDID'
+// Tcl Command: 'RDID'
+// Tcl Message: RDID 
+// Tcl Message: wrong # args: should be "RDID byte_num" 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 4", true); // aC (Z, cl)
+// Tcl Command: 'RDID 4'
+// Tcl Command: 'RDID 4'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 4 
+// Tcl Message: RDID is ffffffff 
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/axi_jtag.tcl 
+// Tcl Message: # proc ReadReg {address} { #     set address [format 0x%08x $address] #     create_hw_axi_txn rd_txn [get_hw_axis hw_axi_1] -address $address -type read #     run_hw_axi rd_txn #     set read_value [lindex [report_hw_axi_txn rd_txn] 1] #     delete_hw_axi_txn rd_txn #     return $read_value # } # proc WriteReg {address data} { #     set address [format 0x%08x $address] #     set data [format 0x%08x $data] #     create_hw_axi_txn wr_txn [get_hw_axis hw_axi_1] -type write -address $address -data $data #     run_hw_axi wr_txn #     set write_value [lindex [report_hw_axi_txn wr_txn] 1] #     delete_hw_axi_txn wr_txn #     return $write_value # } 
+dismissDialog("Source Tcl Script"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {R*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "R", true); // aC (Z, cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: RDID is ffffff 
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {Re*}'
+// Tcl Command: 'rdi::info_commands {Re*}'
+// Elapsed time: 17 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000000 
+// Tcl Command: 'rdi::info_commands {R*}'
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "R", true); // aC (Z, cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 3", true); // aC (Z, cl)
+// Tcl Command: 'RDID 3'
+// Tcl Command: 'RDID 3'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 3 
+// Tcl Message: RDID is 20ba18 
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 4", true); // aC (Z, cl)
+// Tcl Command: 'RDID 4'
+// Tcl Command: 'RDID 4'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 4 
+// Tcl Message: RDID is 20ba1810 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 8", true); // aC (Z, cl)
+// Tcl Command: 'RDID 8'
+// Tcl Command: 'RDID 8'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 8 
+// Tcl Message: RDID is 20ba181000002373 
+// Tcl Command: 'rdi::info_commands {RDI*}'
+// Tcl Command: 'rdi::info_commands {RD*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Elapsed time: 100 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x1000 10", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x1000 10'
+// Tcl Command: 'READ 0x1000 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x1000 10 
+// Tcl Message: can't read "byte_num": no such variable 
+// Elapsed time: 50 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 0000000d 
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x1000 10", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x1000 10'
+// Tcl Command: 'READ 0x1000 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x1000 10 
+// Tcl Message: can't read "byte_num": no such variable 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 333, 159, false, false, false, true, false); // dt (af, cl) - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT, "Clear All Output"); // ah (an, cl)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+// 'cK' command handler elapsed time: 3 seconds
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x1000 10", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x1000 10'
+// Tcl Command: 'READ 0x1000 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x1000 10 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 00000000000000000000 
+// Tcl Command: 'rdi::info_commands {S*}'
+// Tcl Command: 'rdi::info_commands {SE*}'
+// Elapsed time: 30 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "SE 1", true); // aC (Z, cl)
+// Tcl Command: 'SE 1'
+// Tcl Command: 'SE 1'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: SE 1 
+// Tcl Message: 00000186 
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x1000 10", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x1000 10'
+// Tcl Command: 'READ 0x1000 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x1000 10 
+// Tcl Message: ReadData is 00000000000000000000 
+// Tcl Command: 'rdi::info_commands {b*}'
+// Tcl Command: 'rdi::info_commands {B*}'
+// Tcl Command: 'rdi::info_commands {BE*}'
+// Elapsed time: 24 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE", true); // aC (Z, cl)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE"); // aC (Z, cl)
+// Tcl Command: 'BE'
+// Tcl Command: 'BE'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: BE 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x1000 10", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x1000 10'
+// Tcl Command: 'READ 0x1000 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x1000 10 
+// Tcl Message: ReadData is 00000000000000000000 
+// Tcl Command: 'rdi::info_commands {PP*}'
+// Tcl Command: 'rdi::info_commands {r*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Elapsed time: 97 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RE 0x100", true); // aC (Z, cl)
+// Tcl Command: 'rdi::info_commands {READ*}'
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 0000000000000000000000000000000000000800 
+// Tcl Command: 'rdi::info_commands {W*}'
+// Elapsed time: 25 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "W", true); // aC (Z, cl)
+// Tcl Command: 'rdi::info_commands {WREN*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "WREN", true); // aC (Z, cl)
+// Tcl Command: 'WREN'
+// Tcl Command: 'WREN'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: WREN 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "SE 1", true); // aC (Z, cl)
+// Tcl Command: 'SE 1'
+// Tcl Command: 'SE 1'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: SE 1 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 0000000000000000000000000000000000000800 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "SE 0", true); // aC (Z, cl)
+// Tcl Command: 'SE 0'
+// Tcl Command: 'SE 0'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: SE 0 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// Tcl Message: ReadData is 0000000000000000000000000000000000000800 
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE", true); // aC (Z, cl)
+// Tcl Command: 'BE'
+// Tcl Command: 'BE'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: BE 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 0000000000000000000000000000000000000800 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "WREN", true); // aC (Z, cl)
+// Tcl Command: 'WREN'
+// Tcl Command: 'WREN'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: WREN 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE", true); // aC (Z, cl)
+// Tcl Command: 'BE'
+// Tcl Command: 'BE'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: BE 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffff 
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100"); // aC (Z, cl)
+// Tcl Command: 'rdi::info_commands {PP*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 00000186 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffff 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffff 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "WREN", true); // aC (Z, cl)
+// Tcl Command: 'WREN'
+// Tcl Command: 'WREN'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: WREN 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100"); // aC (Z, cl)
+// Tcl Message: 00000186 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 20'
+// Tcl Command: 'READ 0x100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 20 
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f10111213 
+// Elapsed time: 126 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x114 20", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x114 20'
+// Tcl Command: 'READ 0x114 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x114 20 
+// Tcl Message: ReadData is 1415161718191a1b1c1d1e1f2021222324252627 
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 25 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 256", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 256'
+// Tcl Command: 'READ 0x100 256'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 256 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 68 MB. Current time: 6/3/23, 5:33:37 PM CST
+// Elapsed time: 74 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 204 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device"); // ae (cl)
+selectMenu(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device"); // ae (cl)
+selectMenu(PAResourceCommand.PACommandNames_ADD_CONFIG_MEMORY, "Add Configuration Memory Device"); // ae (cl)
+selectMenu(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device"); // ae (cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Tcl Command: 'rdi::info_commands {see*}'
+// Tcl Command: 'rdi::info_commands {SE*}'
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "SE 0", true); // aC (Z, cl)
+// Tcl Command: 'SE 0'
+// Tcl Command: 'SE 0'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: SE 0 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 00000186 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Tcl Command: 'rdi::info_commands {PP*}'
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x180", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x180'
+// Tcl Command: 'PP 0x180'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 00000186 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 382 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {BE*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE", true); // aC (Z, cl)
+// Tcl Command: 'BE'
+// Tcl Command: 'BE'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: BE 
+// Tcl Message: Bulk Erase Done! 
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Tcl Command: 'rdi::info_commands {PP*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 0x00000180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Page Program Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 23 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 0x00000180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Page Program Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 0x00000180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Page Program Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Elapsed time: 871 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+selectButton(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, "Tcl Console_remove"); // B (f, cl)
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Tcl Command: 'rdi::info_commands {SE*}'
+// Elapsed time: 13 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "SE 0x0", true); // aC (Z, cl)
+// Tcl Command: 'SE 0x0'
+// Tcl Command: 'SE 0x0'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: SE 0x0 
+// Tcl Message: Sector Erase Done! 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0x100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0x100'
+// Tcl Command: 'PP 0x100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0x100 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 0x00000180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Page Program Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 68 MB. Current time: 6/3/23, 6:03:37 PM CST
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f 
+dismissDialog("Tcl Command Line"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x180 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x180 128'
+// Tcl Command: 'READ 0x180 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x180 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadData is 808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 67 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 474, 274); // dt (af, cl)
+// Elapsed time: 770 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expected integer but got "(0-3)" 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 60, 276); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 127, 277); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 144, 273); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 198, 278); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 87, 278); // dt (af, cl)
+// Elapsed time: 48 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expected integer but got "(4-3)" 
+// Elapsed time: 67 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: expected integer but got "08" 
+// Elapsed time: 80 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 149 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl"); // aC (Z, cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 80 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 128 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 70 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 95 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message:  Read Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 260, 165); // dt (af, cl)
+// Elapsed time: 60 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+// 'cK' command handler elapsed time: 4 seconds
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 18 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 37, 24); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 89, 399); // dt (af, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 68 MB. Current time: 6/3/23, 6:33:37 PM CST
+// Elapsed time: 60 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 10 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 64, 25); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 51, 27); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 33, 30); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 17, 31); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 3, 24); // dt (af, cl)
+// Elapsed time: 94 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 66 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0x100 128", true); // aC (Z, cl)
+// Tcl Command: 'READ 0x100 128'
+// Tcl Command: 'READ 0x100 128'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0x100 128 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 403 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 522, 44); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 171, 124); // dt (af, cl)
+// Elapsed time: 196 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// D (cl): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1330 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+dismissDialog("Settings"); // D (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (F, cl)
+// [GUI Memory]: 144 MB (+1419kb) [19:51:39]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), design_1_i : design_1 (design_1.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// by (cl):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1371 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0 Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0 Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0 
+// Tcl Message: Successfully read diagram <design_1> from BD file <C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/design_1.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // by (cl)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2129 ms.
+selectComboBox("Mode (C_SPI_MODE)", "Quad", 2); // E (E, r)
+selectComboBox("FIFO Depth (C_FIFO_DEPTH)", "256", 1); // E (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.C_SPI_MODE {2} CONFIG.C_FIFO_DEPTH {256}] [get_bd_cells axi_quad_spi_0]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 156 MB (+4547kb) [19:51:58]
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_SPI_MODE {2} CONFIG.C_FIFO_DEPTH {256}] [get_bd_cells axi_quad_spi_0] 
+// Tcl Message: endgroup 
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\hjh09\Desktop\project\spi_test\prj\top.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Save Constraints"); // by (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_axi_quad_spi_0_0_synth_1 
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0                    ########################################################################################                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are asynchronous to each other.                   ######################################################################################## 
+// Tcl Message: Wrote  : <C:\Users\hjh09\Desktop\project\spi_test\prj\top.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . 
+// Tcl Message: Exporting to file C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/hjh09/Desktop/project/spi_test/prj/top.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_quad_spi_0_0, cache-ID = 358cf338c9b0b046; cache size = 29.858 MB. 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Jun  3 18:48:05 2023] Launched synth_1... Run output will be captured here: C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/synth_1/runme.log [Sat Jun  3 18:48:05 2023] Launched impl_1... Run output will be captured here: C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 202 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, ah): TRUE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, ah): FALSE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true); // t (O, cl) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RDI*}'
+// Tcl Command: 'rdi::info_commands {RDID*}'
+// Elapsed time: 23 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 4", true); // aC (Z, cl)
+// Tcl Command: 'RDID 4'
+// Tcl Command: 'RDID 4'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 4 
+// Tcl Message: RDID is ffffffff 
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is 20ba1810000023737462 
+// Elapsed time: 150 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is 20ba1810000023737462 
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is ffffffffffffffffffff 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is 20ba1810000023737462 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Tcl Command: 'rdi::info_commands {B*}'
+// Tcl Command: 'rdi::info_commands {BE*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "BE", true); // aC (Z, cl)
+// Tcl Command: 'BE'
+// Tcl Command: 'BE'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: BE 
+// Tcl Message: Bulk Erase Done! 
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is 20ba1810000023737462 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 40, 259); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 40, 259, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 71, 256); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 71, 256, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 100, 265); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 66, 256); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 43, 254); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 43, 254, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 87, 260); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 87, 260, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 39, 255); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 39, 255, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 9, 250); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 9, 250, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 12, 239); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 12, 239, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 12, 239); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 34, 255); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 34, 255, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 123, 256); // dt (af, cl)
+// Tcl Command: 'rdi::info_commands {REA*}'
+// Tcl Command: 'rdi::info_commands {REA*}'
+// Elapsed time: 23 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0X100 200", true); // aC (Z, cl)
+// Tcl Command: 'READ 0X100 200'
+// Tcl Command: 'READ 0X100 200'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0X100 200 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: couldn't open "./tcl/rd_data.txt": no such file or directory 
+// Elapsed time: 148 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTY_EDITOR, "Property Editor"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTY_EDITOR
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0X100 200", true); // aC (Z, cl)
+// Tcl Command: 'READ 0X100 200'
+// Tcl Command: 'READ 0X100 200'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0X100 200 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cl): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 95 MB. Current time: 6/3/23, 7:03:38 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 95 MB. Current time: 6/3/23, 7:33:38 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 91 MB. Current time: 6/3/23, 8:03:38 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 91 MB. Current time: 6/3/23, 8:33:38 PM CST
+// Elapsed time: 6219 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 506 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/hjh09/Desktop/project/spi_test/prj/top.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0X100 200", true); // aC (Z, cl)
+// Tcl Command: 'READ 0X100 200'
+// Tcl Command: 'READ 0X100 200'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0X100 200 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 40 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (2) ; Programmed", 2, "xc7a35t_0 (2)", 0, true, false, false, false, true, false); // t (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 15 seconds
+dismissDialog("Program Device"); // bC (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "RDID 10", true); // aC (Z, cl)
+// Tcl Command: 'RDID 10'
+// Tcl Command: 'RDID 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: RDID 10 
+// Tcl Message: RDID is 20ba1810000023737462 
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {W*}'
+// Tcl Command: 'rdi::info_commands {pp*}'
+// Tcl Command: 'rdi::info_commands {PP*}'
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "PP 0X100", true); // aC (Z, cl)
+// Tcl Command: 'PP 0X100'
+// Tcl Command: 'PP 0X100'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: PP 0X100 
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: 0x00000180 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: Page Program Done! 
+dismissDialog("Tcl Command Line"); // by (cl)
+// Elapsed time: 39 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "READ 0X100 200", true); // aC (Z, cl)
+// Tcl Command: 'READ 0X100 200'
+// Tcl Command: 'READ 0X100 200'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: READ 0X100 200 
+// TclEventType: HW_AXI_CHANGE
+// by (cl):  Tcl Command Line : addNotify
+// TclEventType: HW_AXI_CHANGE
+dismissDialog("Tcl Command Line"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 91 MB. Current time: 6/3/23, 9:03:39 PM CST
+// Elapsed time: 1066 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {REA*}'
+// Tcl Command: 'rdi::info_commands {READ*}'
+// Tcl Command: 'rdi::info_commands {REA*}'
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Elapsed time: 13 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+// Elapsed time: 61 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+// Tcl Command: 'rdi::info_commands {QOFR*}'
+// Tcl Command: 'rdi::info_commands {QOFR*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "QOFR 10", true); // aC (Z, cl)
+// Tcl Command: 'QOFR 10'
+// Tcl Command: 'QOFR 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: QOFR 10 
+// Tcl Message: RDID is 00000000000000000000 
+// Elapsed time: 152 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+dismissFileChooser();
+// 'cK' command handler elapsed time: 3 seconds
+// Tcl Command: 'rdi::info_commands {R*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "R", true); // aC (Z, cl)
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "WriteReg 0x40 0xa", true); // aC (Z, cl)
+// Tcl Command: 'WriteReg 0x40 0xa'
+// Tcl Command: 'WriteReg 0x40 0xa'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: WriteReg 0x40 0xa 
+// Tcl Message: 0000000a 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+setFileChooser("C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl");
+// Source Tcl File: 'C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// Tcl Command: 'source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl'
+// by (cl):  Source Tcl Script : addNotify
+// Tcl Message: source C:/Users/hjh09/Desktop/project/spi_test/tcl/flash_test.tcl 
+dismissDialog("Source Tcl Script"); // by (cl)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aC (Z, cl)
+typeControlKey(null, null, 'z');
+// Tcl Command: 'rdi::info_commands {Q*}'
+// Tcl Command: 'rdi::info_commands {QO*}'
+// Tcl Command: 'rdi::info_commands {QO*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "QOFR 0X100 10", true); // aC (Z, cl)
+// Tcl Command: 'QOFR 0X100 10'
+// Tcl Command: 'QOFR 0X100 10'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: QOFR 0X100 10 
+// Tcl Message: 00000186 
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {RE*}'
+// Tcl Command: 'rdi::info_commands {R*}'
+// Tcl Command: 'rdi::info_commands {Re*}'
+// Tcl Command: 'rdi::info_commands {Re*}'
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000000 
+// Elapsed time: 25 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "QOFR 0X100 20", true); // aC (Z, cl)
+// Tcl Command: 'QOFR 0X100 20'
+// Tcl Command: 'QOFR 0X100 20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: QOFR 0X100 20 
+// Tcl Message: 00000186 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x78", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x78'
+// Tcl Command: 'ReadReg 0x78'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x78 
+// Tcl Message: 00000000 
+// Elapsed time: 316 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ReadReg 0x20", true); // aC (Z, cl)
+// Tcl Command: 'ReadReg 0x20'
+// Tcl Command: 'ReadReg 0x20'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: ReadReg 0x20 
+// Tcl Message: 00002440 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 91 MB. Current time: 6/3/23, 9:33:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 91 MB. Current time: 6/3/23, 10:03:39 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (cl): Close Hardware Target: addNotify
+// Elapsed time: 3674 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+selectButton(RDIResource.OptionsView_CLOSE, (String) null); // B (f, cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (Q, A): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,892 MB. GUI used memory: 89 MB. Current time: 6/3/23, 10:33:40 PM CST
